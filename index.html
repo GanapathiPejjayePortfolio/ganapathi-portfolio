@@ -3,44 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ganapathi Pejjaye | Sitecore Developer Portfolio</title>
+  <title>Ganapathi Pejjaye | Sitecore Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e9ecef;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
       color: #212529;
+      line-height: 1.6;
     }
 
     header {
-      background: #0077b6;
+      background: linear-gradient(to right, #0077b6, #00b4d8);
       color: white;
-      padding: 20px 0;
+      padding: 50px 20px;
       text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
     }
 
     .container {
-      max-width: 1000px;
-      margin: auto;
+      max-width: 960px;
+      margin: 30px auto;
       padding: 20px;
       background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-      border-radius: 10px;
-    }
-
-    h1, h2, h3 {
-      color: #0077b6;
-      margin-top: 0;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1s ease-out;
     }
 
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+      font-size: 1.75rem;
+      border-bottom: 2px solid #00b4d8;
+      padding-bottom: 5px;
     }
 
     ul {
-      list-style: disc inside;
+      list-style-type: square;
       padding-left: 20px;
     }
 
@@ -55,18 +74,25 @@
 
     .contact {
       text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .contact p {
-      margin: 5px 0;
+      margin-bottom: 30px;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9em;
       padding: 20px;
+      font-size: 0.85rem;
+      background-color: #f1f3f5;
       color: #6c757d;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -84,69 +110,67 @@
 
     <div class="section">
       <h2>Objective</h2>
-      <p>Highly skilled Sitecore Developer with 3 years of experience in Sitecore development, delivering scalable, performance-optimized solutions with a focus on user experience. Proficient in C#, .NET MVC, SQL Server, and HTML5/CSS3. Experienced in cross-functional team collaboration, mentoring, and using Sitecore 9 & 10 technologies. Adept at resolving complex issues and performing unit testing for robust software delivery.</p>
+      <p>Highly skilled Sitecore Developer with 3 years of experience delivering scalable, performance-optimized solutions with a strong focus on user experience. Proficient in C#, .NET MVC, SQL Server, and HTML5/CSS3. Collaborative team player with hands-on expertise in Sitecore 9 & 10 and a passion for mentoring and optimizing performance.</p>
     </div>
 
     <div class="section">
-      <h2>Experience</h2>
-      <p><strong>Sitecore Developer | Accenture</strong> (Feb 2022 – Present) – Chennai</p>
+      <h2>Professional Experience</h2>
+      <p><strong>Sitecore Developer</strong> – Accenture, Chennai (Feb 2022 – Present)</p>
       <ul>
-        <li>Developed scalable Sitecore solutions tailored to business needs.</li>
-        <li>Worked in Agile/Scrum teams with system analysts and QA.</li>
-        <li>Wrote and tested code using C# .NET; resolved production defects.</li>
-        <li>Utilized Sitecore 9 & 10, implemented dependency injection, IoC.</li>
-        <li>Integrated and customized Solr search for faster, accurate content search.</li>
-        <li>Built reusable .NET components and enhanced user experience.</li>
-        <li>Decompiled assemblies for root cause analysis and bug fixing.</li>
-        <li>Mentored junior developers on Sitecore best practices.</li>
+        <li>Designed scalable Sitecore solutions aligned to business needs.</li>
+        <li>Integrated and customized Solr for high-speed, faceted content search.</li>
+        <li>Created and customized Solr schemas, indexed custom fields, and implemented Solr-based search filters to enhance search accuracy and performance.</li>
+        <li>Built reusable .NET components and dynamic UI features.</li>
+        <li>Debugged issues by decompiling assemblies and tracing code paths.</li>
+        <li>Collaborated with agile teams; led defect triage and resolution efforts.</li>
+        <li>Mentored juniors on Sitecore standards and project conventions.</li>
       </ul>
-
-      <p><strong>Key Achievements:</strong></p>
+      <p><strong>Key Achievements</strong></p>
       <ul>
-        <li>Reduced Sitecore application response times by 30% through optimization.</li>
-        <li>Implemented Sitecore Helix architecture, improving maintainability.</li>
+        <li>Optimized Sitecore performance, cutting response time by 30%.</li>
+        <li>Introduced Sitecore Helix for scalable architecture management.</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Technical Skills</h2>
       <ul>
-        <li><strong>Sitecore:</strong> Sitecore 9 & 10, Helix, Experience Platform (XP)</li>
+        <li><strong>Sitecore:</strong> Sitecore 9 & 10, Helix, Experience Platform</li>
+        <li><strong>Search:</strong> Solr integration, custom Solr schema, faceted search</li>
         <li><strong>Languages:</strong> C#, HTML5, CSS3, JavaScript</li>
         <li><strong>Frameworks:</strong> .NET MVC, Sitecore MVC</li>
         <li><strong>Database:</strong> SQL Server</li>
-        <li><strong>Tools:</strong> Git, Visual Studio, Sitecore PowerShell Extensions</li>
-        <li><strong>Testing:</strong> xUnit, NUnit, Sitecore test frameworks</li>
-        <li><strong>Others:</strong> Agile/Scrum, Troubleshooting</li>
+        <li><strong>Tools:</strong> Git, Visual Studio, Sitecore PowerShell</li>
+        <li><strong>Testing:</strong> xUnit, NUnit, Sitecore Unit Testing</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Education</h2>
       <ul>
-        <li><strong>2019:</strong> B.Tech in Electronics & Communication – Audisankara College of Engineering</li>
-        <li><strong>2015:</strong> Intermediate (MPC) – Sri Chaithanya Junior College</li>
+        <li><strong>2019:</strong> B.Tech, ECE – Audisankara College of Engineering</li>
+        <li><strong>2015:</strong> MPC – Sri Chaithanya Junior College</li>
         <li><strong>2013:</strong> SSC – Sandhya English Medium High School</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Project Experience</h2>
-      <p><strong>Sitecore CMS Enhancement</strong> – Sitecore Developer</p>
+      <p><strong>Sitecore CMS Enhancement</strong></p>
       <ul>
-        <li>Built dynamic Sitecore components for modular content delivery.</li>
-        <li>Used Sitecore API for content fetch, tracking, and reporting.</li>
-        <li>Improved CMS usability in collaboration with the UI/UX team.</li>
+        <li>Built modular components using Sitecore MVC.</li>
+        <li>Used Sitecore APIs for personalization and analytics integration.</li>
+        <li>Collaborated with designers for responsive and accessible UI/UX.</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Soft Skills</h2>
       <ul>
-        <li>Clear communicator – technical and non-technical audiences</li>
-        <li>Team player with proactive attitude and mentoring mindset</li>
-        <li>Flexible problem solver focused on timely delivery</li>
-        <li>Detail-oriented with commitment to code quality</li>
+        <li>Clear communicator, bridging technical and non-technical discussions</li>
+        <li>Team player with a learning and mentoring mindset</li>
+        <li>Analytical thinker with a structured approach to problem-solving</li>
+        <li>Commitment to high coding standards and quality delivery</li>
       </ul>
     </div>
   </div>
